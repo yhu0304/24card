@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="com.ujs.huyang.my24cardapplication.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:id="@+id/play"
+        android:layout_marginLeft="20dp"
+        android:text="@string/play"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:onClick="start"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:id="@+id/exit"
+        android:layout_toRightOf="@id/play"
+        android:layout_marginLeft="120dp"
+        android:text="@string/exit"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:onClick="exit"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dqdf"
+        android:text="@string/score"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/exit"
+        android:layout_marginLeft="180dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/count"
+        android:text="TextView"
+        android:layout_toRightOf="@id/dqdf"
+        android:layout_below="@id/exit"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="150dp"
+        android:src="@drawable/show"
+        android:id="@+id/imgv1"
+        android:layout_below="@id/play"
+        android:layout_marginTop="50dp"
+        />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="150dp"
+        android:src="@drawable/show"
+        android:id="@+id/imgv2"
+        android:layout_toRightOf="@id/imgv1"
+        android:layout_below="@id/play"
+        android:layout_marginTop="50dp"
+        />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="150dp"
+        android:src="@drawable/show"
+        android:id="@+id/imgv3"
+        android:layout_toRightOf="@id/imgv2"
+        android:layout_below="@id/play"
+        android:layout_marginTop="50dp"
+        />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="150dp"
+        android:src="@drawable/show"
+        android:id="@+id/imgv4"
+        android:layout_toRightOf="@id/imgv3"
+        android:layout_below="@id/play"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/input"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="270dp"
+        android:ems="15">
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/send"
+        android:text="@string/send"
+        android:layout_marginTop="350dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:onClick="send"
+        />
+
+
+
+</RelativeLayout>
